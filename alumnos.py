@@ -4,8 +4,8 @@ from odoo import models,fields
 class alumnos(models.Model):
     _name = 'escolares.alumnos'
 
-    name = fields.Char(string='NControl')
-    nombre = fields.Char(string='Nombre')
+    name = fields.Char(string='NumControl')
+    nombre = fields.Char(string='Nombre y Apellido')
     direccion = fields.Char(string='Dirección')
     telefono = fields.Char(string='Teléfono')
     email = fields.Char(string='Email')
