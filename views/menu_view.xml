@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<menuitem name="Escolares" id="escolares_menu" sequence="20" />
+			<menuitem name="Catalagos" id="escolares_catalogos_menu" parent="escolares_menu" sequence="10"/>
+				<menuitem name="Alumnos" action="escolares_alumnos_action"  id="escolares_alumnos_menu" sequence="20" parent="escolares_catalogos_menu" />
+				<menuitem name="Carreras" action="escolares_carreras_action"  id="escolares_carreras_menu" sequence="30" parent="escolares_catalogos_menu" />
+	</data>
+</odoo>
