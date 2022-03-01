@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models,fields
-
+'''Comentario del Migue jaja saludos'''
 class alumnos(models.Model):
     _name = 'escolares.alumnos'
 
