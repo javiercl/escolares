@@ -4,7 +4,7 @@
     'version': '1.0',
     'category': 'Universidades',
     'description': 'Control Escolar',
-    'author': 'Javier Cisneros,Jorge Cerda,Enrique Huerta,Cesar Soria',
+    'author': 'Javier Cisneros,Jorge Cerda,Enrique Huerta,Cesar Soria,Geronimo',
     'maintainer': 'ITSA',
     'website': 'http://www.itsa.edu.mx',
     'depends': ['base'],
