@@ -2,4 +2,5 @@
 
 from . import alumnos
 from . import carreras
+from . import profesores
 
