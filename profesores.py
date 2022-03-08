@@ -1,20 +1,20 @@
 # -*- coding: utf-8 -*-
 from odoo import models,fields
 
-class alumnos(models.Model):
-    _name = 'escolares.alumnos'
+class profesores(models.Model):
+    _name = 'escolares.profesores'
 
-    name = fields.Char(string='NControl')
-    nombre = fields.Char(string='Nombre Completo')
+    name = fields.Char(string='Matricula')
+    nombre = fields.Char(string='Nombre y Apellido')
     direccion = fields.Char(string='Dirección')
     telefono = fields.Char(string='Teléfono')
     email = fields.Char(string='Email')
     sexo = fields.Selection([('f','Femenino'),('m','Masculino')],string='Sexo')
     edad = fields.Integer(string='Edad')
-    inscrito = fields.Boolean(string='Inscrito?')
-    carrera_id = fields.Many2one('escolares.carreras',string="Carrera")
+    materia = fields.Char(string='Materia a impartir')
+
 
     _sql_constraints = [
-        ('unique_alumno', 'unique (name)', 'El alumno ya existe!')
+        ('unique_profesores', 'unique (name)', 'El profesor ya existe!')
     ]
 
