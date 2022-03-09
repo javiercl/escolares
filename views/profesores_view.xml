@@ -9,14 +9,13 @@
 		<form>
             <sheet>
                 <group string="Datos de profesores">
-                    <field name="name" placeholder="Matricula" />
+                    <field name="name" placeholder="Clave" />
                     <field name="nombre" placeholder="Nombre y Apellido"/>
                     <field name="direccion" placeholder="Dirección"/>
                     <field name="telefono" placeholder="Teléfono"/>							
                     <field name="email" placeholder="Correo electrónico"/>
                     <field name="sexo" placeholder="Sexo"/>
                     <field name="edad" placeholder="Edad"/>
-					<field name="materia_id" placeholder="Materia a impartir"/>
                 </group>
             </sheet>
 		</form>
@@ -36,7 +35,6 @@
 						<field name="telefono" />
 						<field name="sexo" />
 						<field name="edad" />
-						<field name="materia_id" />
 				</tree>
 			</field>
 		</record>
@@ -52,7 +50,6 @@
 					<field name="telefono" />
 					<field name="sexo" />
 					<field name="edad" />
-					<field name="materia_id" />
 				</search>
 			</field>
 		</record>
