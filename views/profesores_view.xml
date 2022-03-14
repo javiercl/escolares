@@ -57,7 +57,7 @@
 
 
 		<!-- ACCION PARA EL MODELO escolares.profesores -->	
-		<record id="escolares_profesores_action" model="ir.actions.act_w|dow">
+		<record id="escolares_profesores_action" model="ir.actions.act_window">
 			<field name="name">Profesores</field>
 			<field name="res_model">escolares.profesores</field>
 			<field name="view_mode">tree,form</field>
