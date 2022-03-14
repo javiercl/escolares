@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 from odoo import models,fields
-'''Comentario del Migue jaja saludos'''
+
 class alumnos(models.Model):
     _name = 'escolares.alumnos'
 
-    name = fields.Char(string='NControl')
+    name = fields.Char(string='NumControl')
     nombre = fields.Char(string='Nombre')
     direccion = fields.Char(string='Dirección')
     telefono = fields.Char(string='Teléfono')

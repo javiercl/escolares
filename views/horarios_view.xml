@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="horarios_form">
+		<field name="name">escolares.horarios.form</field>
+		<field name="model">escolares.horarios</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+		<form>
+            <sheet>
+                <group string="horarios">
+                    <field name="name" />
+                    <field name="horas" />
+					<field name="inscrito"/>
+                </group>
+            </sheet>
+		</form>
+        </field>
+		</record>
+
+        <!-- vista tipo tree del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="escolares_horarios_tree">
+			<field name="name">escolares.horarios.tree</field>
+			<field name="model">escolares.horarios</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<grid string="horarios" >
+					<field name="name" />
+                    <field name="horas" />
+                    <field name="inscrito" />
+				</grid>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="escolares_horarios_search">
+			<field name="name">escolares.horarios.search</field>
+			<field name="model">escolares.horarios</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+                    <field name="horas" />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO escolares.alumnos -->	
+		<record id="escolares_horarios_action" model="ir.actions.act_window">
+			<field name="name">horarios</field>
+			<field name="res_model">escolares.horarios</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+</odoo>

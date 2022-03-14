@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="niveles_form">
+		<field name="name">escolares.niveles.form</field>
+		<field name="model">escolares.niveles</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+		<form>
+            <sheet>
+                <group string="niveles">
+                    <field name="name" />
+                </group>
+            </sheet>
+		</form>
+        </field>
+		</record>
+
+        <!-- vista tipo tree del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="escolares.niveles_tree">
+			<field name="name">escolares.niveles.tree</field>
+			<field name="model">escolares.niveles</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<grid string="niveles" >
+					<field name="name" />
+				</grid>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="escolares.niveles_search">
+			<field name="name">escolares.niveles.search</field>
+			<field name="model">escolares.niveles</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO escolares.alumnos -->	
+		<record id="escolares_niveles_action" model="ir.actions.act_window">
+			<field name="name">niveles</field>
+			<field name="res_model">escolares.niveles</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+</odoo>

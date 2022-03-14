@@ -5,5 +5,8 @@
 			<menuitem name="Catalagos" id="escolares_catalogos_menu" parent="escolares_menu" sequence="10"/>
 				<menuitem name="Alumnos" action="escolares_alumnos_action"  id="escolares_alumnos_menu" sequence="20" parent="escolares_catalogos_menu" />
 				<menuitem name="Carreras" action="escolares_carreras_action"  id="escolares_carreras_menu" sequence="30" parent="escolares_catalogos_menu" />
+				<menuitem name="Horarios" action="escolares_horarios_action"  id="escolares_horarios_menu" sequence="30" parent="escolares_catalogos_menu" />
+				<menuitem name="Niveles" action="escolares_niveles_action"  id="escolares_niveles_menu" sequence="30" parent="escolares_catalogos_menu" />
+				<menuitem name="Horas" action="escolares_horas_action"  id="escolares_horas_menu" sequence="30" parent="escolares_catalogos_menu" />
 	</data>
 </odoo>
