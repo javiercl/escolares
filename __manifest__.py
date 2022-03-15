@@ -12,7 +12,9 @@
         'views/alumnos_view.xml',
         'views/carreras_view.xml',
         'views/profesores_view.xml',
+        'views/periodos_view.xml',
         'views/menu_view.xml',
+        
     ],
     'installable': True,
     'auto_install': False,

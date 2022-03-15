@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        
+
+        <!-- vista tipo tree del modelo escolares.periodos -->	
+		<record model="ir.ui.view" id="periodos_tree">
+			<field name="name">escolares.periodos.tree</field>
+			<field name="model">escolares.periodos</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="periodos" editable = "top" >
+						<field name="name" />
+						<field name="descripcion" />
+						
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="escolares_periodos_search">
+			<field name="name">escolares.periodos.search</field>
+			<field name="model">escolares.periodos</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="descripcion" />
+					
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO escolares.periodos -->	
+		<record id="escolares_periodos_action" model="ir.actions.act_window">
+			<field name="name">periodos</field>
+			<field name="res_model">escolares.periodos</field>
+			<field name="view_mode">tree</field>
+		</record>
+
+
+</odoo>
