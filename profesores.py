@@ -5,7 +5,7 @@ class profesores(models.Model):
     _name = 'escolares.profesores'
 
     name = fields.Char(string='Clave')
-    nombre = fields.Char(string='Nombre y Apellido')
+    nombre = fields.Char(string='Nombre y Apellidos')
     direccion = fields.Char(string='Dirección')
     telefono = fields.Char(string='Teléfono')
     email = fields.Char(string='Email')
