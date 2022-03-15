@@ -11,6 +11,7 @@
                 <group string="horarios">
                     <field name="name" />
                     <field name="horas" />
+					<field name="profesores" />
 					<field name="inscrito"/>
                 </group>
             </sheet>
@@ -27,6 +28,7 @@
 				<grid string="horarios" >
 					<field name="name" />
                     <field name="horas" />
+					 <field name="profesores" />
                     <field name="inscrito" />
 				</grid>
 			</field>
@@ -38,6 +40,7 @@
 			<field name="arch" type="xml">
 				<search>
 					<field name="name" />
+					 <field name="profesores" />
                     <field name="horas" />
 				</search>
 			</field>

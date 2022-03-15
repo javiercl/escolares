@@ -10,4 +10,3 @@ class carreras(models.Model):
     _sql_constraints = [
         ('unique_carreras', 'unique (name)', 'La carrera ya existe!')
     ]
-    

@@ -8,4 +8,5 @@ class horarios(models.Model):
     horas = fields.Many2one('escolares.horas',string='Horas', require='True')
     carrera_id = fields.Many2one('escolares.carreras', string = 'Carrera')
     inscrito = fields.Many2one('escolares.alumnos', string = 'Inscrito')
+    profesores = fields.Many2one('escolares.profesores', string = 'Profesores')
 
