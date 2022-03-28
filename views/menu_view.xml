@@ -6,8 +6,10 @@
 			<menuitem name="Periodos" action="escolares_periodos_action"  id="escolares_periodos_menu" sequence="10" parent="escolares_catalogos_menu" />
 				<menuitem name="Alumnos" action="escolares_alumnos_action"  id="escolares_alumnos_menu" sequence="20" parent="escolares_catalogos_menu" />
 				<menuitem name="Carreras" action="escolares_carreras_action"  id="escolares_carreras_menu" sequence="30" parent="escolares_catalogos_menu" />
+
 				<menuitem name="Profesores" action="escolares_profesores_action"  id="escolares_profesores_menu" sequence="30" parent="escolares_catalogos_menu" />
 
+				<menuitem name="Planes" action="escolares_planes_action" id="escolares_planes_menu" sequence="30" parent="escolares_catalogos_menu" />
 
 	</data>
 </odoo>
