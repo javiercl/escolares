@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="planes_form">
+		<field name="name">escolares.planes.form</field>
+		<field name="model">escolares.planes</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+		<form>
+            <header>
+                 <field name="state" placeholder="estado" widget="statusbar" />
+            </header>
+            <sheet>
+                <group string="Datos de planes">
+
+                    <field name="name" placeholder="Plan" />
+					<field name="niveles" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="name" />
+                            <field name="modalidad" />
+                        </tree>
+                    </field>
+                </group>
+            </sheet>
+		</form>
+        </field>
+		</record>
+
+        <!-- vista tipo tree del modelo escolares.planes -->	
+		<record model="ir.ui.view" id="escolares_planes_tree">
+			<field name="name">escolares.planes.tree</field>
+			<field name="model">escolares.planes</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="planes" >
+						<field name="name" />
+						<field name="state" />
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- ACCION PARA EL MODELO escolares.planes -->	
+		<record id="escolares_planes_action" model="ir.actions.act_window">
+			<field name="name">planes</field>
+			<field name="res_model">escolares.planes</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+</odoo>

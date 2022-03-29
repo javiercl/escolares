@@ -11,10 +11,10 @@
     'data': [
         'views/alumnos_view.xml',
         'views/carreras_view.xml',
+        'views/periodos_view.xml',
         'views/profesores_view.xml',
+        'views/planes_view.xml',
         'views/horarios_view.xml',
-        'views/niveles_view.xml',
-        'views/horas_view.xml',
         'views/menu_view.xml',
         
     ],
