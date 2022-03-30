@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <!-- vista tipo tree del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="escolares_horarios_tree">
+			<field name="name">escolares.horarios.tree</field>
+			<field name="model">escolares.horarios</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="horarios" editable="top">
+					<field name="name" />
+                    <field name="periodo" />
+					<field name="profesor" />
+					<field name="plan" />
+                    <field name="horario" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="escolares_horarios_search">
+			<field name="name">escolares.horarios.search</field>
+			<field name="model">escolares.horarios</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name" />
+					<field name="periodo" />
+					<field name="plan" />
+                    <field name="horario" />
+					<field name="profesor" />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO escolares.alumnos -->	
+		<record id="escolares_horarios_action" model="ir.actions.act_window">
+			<field name="name">horarios</field>
+			<field name="res_model">escolares.horarios</field>
+			<field name="view_mode">tree</field>
+		</record>
+
+
+</odoo>

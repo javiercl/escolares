@@ -11,5 +11,7 @@
 
 				<menuitem name="Planes" action="escolares_planes_action" id="escolares_planes_menu" sequence="30" parent="escolares_catalogos_menu" />
 
+				<menuitem name="Horarios" action="escolares_horarios_action" id="escolares_horarios_menu" sequence="30" parent="escolares_catalogos_menu" />
+
 	</data>
 </odoo>
