@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo escolares.inscripciones -->	
+		<record model="ir.ui.view" id="inscripciones_form">
+		<field name="name">escolares.inscripciones.form</field>
+		<field name="model">escolares.inscripciones</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+		<form>
+            <sheet>
+                <group string="Datos de inscripciones">
+                    <field name="periodo" placeholder="Periodo" />
+                    <field name="alumno" placeholder="Alumno"/>
+                    <field name="plan" placeholder="Plan"/>
+                    <field name="nivel" placeholder="Nivel"/>							
+                    <field name="profesor" placeholder="Profesor"/>
+                    <field name="horario" placeholder="Horario"/>
+                </group>
+            </sheet>
+		</form>
+        </field>
+		</record>
+
+        <!-- vista tipo tree del modelo escolares.inscripciones -->	
+		<record model="ir.ui.view" id="escolares_inscripciones_tree">
+			<field name="name">escolares.inscripciones.tree</field>
+			<field name="model">escolares.inscripciones</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="inscripciones" >
+                    <field name="periodo"  />
+                    <field name="alumno" />
+                    <field name="plan" />
+                    <field name="nivel" />							
+                    <field name="profesor" />
+                    <field name="horario" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="escolares_inscripciones_search">
+			<field name="name">escolares.inscripciones.search</field>
+			<field name="model">escolares.inscripciones</field>
+			<field name="arch" type="xml">
+				<search>
+                    <field name="periodo"  />
+                    <field name="alumno" />
+                    <field name="plan" />
+                    <field name="nivel" />							
+                    <field name="profesor" />
+                    <field name="horario" />
+				</search>
+			</field>
+		</record>
+
+
+
+		<!-- ACCION PARA EL MODELO escolares.inscripciones -->	
+		<record id="escolares_inscripciones_action" model="ir.actions.act_window">
+			<field name="name">inscripciones</field>
+			<field name="res_model">escolares.inscripciones</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+</odoo>
