@@ -15,3 +15,5 @@ class inscripciones(models.Model):
     _sql_constraints = [
         ('unique_inscripciones', 'unique(periodo,alumno)', 'El registro ya existe para este periodo!')
     ]
+
+

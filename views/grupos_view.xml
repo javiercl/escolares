@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- vista tipo form del modelo escolares.alumnos -->	
+		<record model="ir.ui.view" id="grupos_form">
+		<field name="name">escolares.grupos.form</field>
+		<field name="model">escolares.grupos</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+		<form>
+            <header>
+                 <field name="state" placeholder="estado" widget="statusbar" />
+            </header>
+            <sheet>
+                <group string="Datos de grupos">
+
+                    <field name="name" placeholder="Grupo" />
+                    <field name="periodo" placeholder="Periodo" />
+                    <field name="plan" placeholder="Plan" />
+                    <field name="nivel" placeholder="Nivel" />
+                    <field name="profesor" placeholder="Profe" />
+					<field name="califs" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="alumno" />
+                            <field name="calif" />
+                        </tree>
+                    </field>
+                </group>
+            </sheet>
+		</form>
+        </field>
+		</record>
+
+        <!-- vista tipo tree del modelo escolares.grupos -->	
+		<record model="ir.ui.view" id="escolares_grupos_tree">
+			<field name="name">escolares.grupos.tree</field>
+			<field name="model">escolares.grupos</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="grupos" >
+						<field name="name" />
+						<field name="periodo" />
+						<field name="plan" />
+						<field name="nivel" />
+						<field name="profesor" />
+						<field name="state" />
+				</tree>
+			</field>
+		</record>
+
+
+		<!-- ACCION PARA EL MODELO escolares.grupos -->	
+		<record id="escolares_grupos_action" model="ir.actions.act_window">
+			<field name="name">grupos</field>
+			<field name="res_model">escolares.grupos</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+
+</odoo>

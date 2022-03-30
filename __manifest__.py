@@ -16,6 +16,7 @@
         'views/planes_view.xml',
         'views/inscripciones_view.xml',
         'views/horarios_view.xml',
+        'views/grupos_view.xml',
         'views/menu_view.xml',
         
     ],

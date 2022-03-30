@@ -12,8 +12,9 @@
 				<menuitem name="Planes" action="escolares_planes_action" id="escolares_planes_menu" sequence="30" parent="escolares_catalogos_menu" />
 
 			<menuitem name="Procesos" id="escolares_procesos_menu" parent="escolares_menu" sequence="20"/>
-				<menuitem name="Inscripciones" action="escolares_inscripciones_action" id="escolares_inscripciones_menu" sequence="10" parent="escolares_procesos_menu" />
-				<menuitem name="Horarios" action="escolares_horarios_action" id="escolares_horarios_menu" sequence="30" parent="escolares_procesos_menu" />
+				<menuitem name="Horarios" action="escolares_horarios_action" id="escolares_horarios_menu" sequence="10" parent="escolares_procesos_menu" />
+				<menuitem name="Inscripciones" action="escolares_inscripciones_action" id="escolares_inscripciones_menu" sequence="20" parent="escolares_procesos_menu" />
+				<menuitem name="Grupos" action="escolares_grupos_action" id="escolares_grupos_menu" sequence="30" parent="escolares_procesos_menu" />
 
 	</data>
 </odoo>
