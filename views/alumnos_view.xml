@@ -69,4 +69,8 @@
 		</record>
 
 
+	<report id="kardex_id" model="escolares.alumnos"
+		string="Kardex" report_type="qweb-pdf" name="escolares.kardex"
+		attachment_use="False"/> 
+
 </odoo>

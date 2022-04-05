@@ -17,6 +17,7 @@
         'views/inscripciones_view.xml',
         'views/horarios_view.xml',
         'views/grupos_view.xml',
+        'reports/kardex.xml',
         'views/menu_view.xml',
         
     ],

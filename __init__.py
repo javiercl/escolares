@@ -8,3 +8,4 @@ from . import horarios
 from . import planes
 from . import inscripciones
 from . import grupos
+from . import kardex

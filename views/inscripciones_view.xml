@@ -9,7 +9,7 @@
 		<form>
             <sheet>
                 <group string="Datos de inscripciones">
-                    <field name="periodo" placeholder="Periodo" />
+                    <field name="peri" placeholder="Periodo" />
                     <field name="alumno" placeholder="Alumno"/>
                     <field name="plan" placeholder="Plan"/>
                     <field name="nivel" placeholder="Nivel"/>							
@@ -28,7 +28,7 @@
 			<field name="type">tree</field>
 			<field name="arch" type="xml">
 				<tree string="inscripciones" >
-                    <field name="periodo"  />
+                    <field name="peri"  />
                     <field name="alumno" />
                     <field name="plan" />
                     <field name="nivel" />							
@@ -43,7 +43,7 @@
 			<field name="model">escolares.inscripciones</field>
 			<field name="arch" type="xml">
 				<search>
-                    <field name="periodo"  />
+                    <field name="peri"  />
                     <field name="alumno" />
                     <field name="plan" />
                     <field name="nivel" />							
