@@ -17,6 +17,12 @@
                     <field name="edad" placeholder="Edad"/>
                     <field name="inscrito" placeholder="Inscrito S/N" readonly="True"/>
 					<field name="carrera_id" placeholder="Carrera"/>
+					<field name="califs_ids">
+						<tree>
+							<field name="grupo" />
+							<field name="calif" />
+						</tree>
+					</field>
                 </group>
             </sheet>
 		</form>

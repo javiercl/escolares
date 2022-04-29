@@ -11,7 +11,6 @@ class inscripciones(models.Model):
     profesor = fields.Many2one('escolares.profesores',string='Profesor')
     horario = fields.Many2one('escolares.horarios',string='Horario')
 
-
     _sql_constraints = [
         ('unique_inscripciones', 'unique(peri,alumno)', 'El registro ya existe para este periodo!')
     ]

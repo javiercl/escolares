@@ -3,31 +3,39 @@
 <odoo>
 	<template id="kardex">
 		<t t-call="web.html_container">
-			<t t-foreach="docs" t-as="o">
-				 	<div class="header"  style="font-size:10px">
-						<strong>Header</strong>
-				 	</div>
+			<div class="header"  style="font-size:10px">
+				<strong>Header</strong>
+			</div>
 
-					<div class="page" style="font-size:10px">
-						<table width="100%">
+			<div class="page" style="font-size:10px">
+					<t t-foreach="docs" t-as="o">
+						<table width="100%" style="border: 1px black solid">
 							<tr>
 								<td width="10%">N.Control</td>
-								<td width="40%">Nombre</td>
-								<td width="10%">Sexo</td>
-								<td width="40%">Carrera</td>
-                            </tr>
+								<td width="40%"> <t t-esc="o.name" /> </td>
+								<td width="10%">Carrera</td>
+								<td width="40%"><t t-esc="o.carrera_id.nombre" /></td>
+							</tr>
 							<tr>
-								<td width="10%"><t t-esc="o.name"/></td>
-								<td width="40%"><t t-esc="o.nombre"/></td>
-								<td width="10%"><t t-esc="o.sexo"/></td>
-								<td width="40%"><t t-esc="o.carrera_id.name"/></td>
-                            </tr>
+								<td width="10%">Nombre</td>
+								<td width="40%"> <t t-esc="o.nombre" /> </td>
+								<td width="10%">Promedio</td>
+								<td width="40%"><t t-esc="o.promedio" /></td>
+							</tr>
+						</table>	
+						<table width="100%">
+							<t t-foreach="o.califs_ids" t-as="c">
+								<tr>
+									<td width="20%"><t t-esc="c.grupo.name"/></td>
+									<td width="80%"><t t-esc="c.calif"/></td>
+								</tr>
+							</t>
 						</table>
-					</div>
-				 	<div class="footer"  style="font-size:9px">
-						<strong>Footer</strong>
-					</div>
-			</t>
+					</t>
+			</div>
+			<div class="footer"  style="font-size:9px">
+				<strong>Footer</strong>
+			</div>
 		</t>
 		</template>
 </odoo>
