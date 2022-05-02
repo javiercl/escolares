@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ingles_id" model="ir.module.category">
+            <field name="name">Modulo de Ingles</field>
+        </record>
+        <record id="escolares_profesor" model="res.groups">
+            <field name="name">Profesores</field>
+            <field name="category_id" ref="ingles_id"/>
+        </record>
+        <record id="escolares_alumno" model="res.groups">
+            <field name="name">Alumnos</field>
+            <field name="category_id" ref="ingles_id"/>
+        </record>
+        <record id="escolares_admin" model="res.groups">
+            <field name="name">Administrador</field>
+            <field name="category_id" ref="ingles_id"/>
+        </record>
+    </data>
+</odoo>

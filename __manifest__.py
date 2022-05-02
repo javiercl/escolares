@@ -9,6 +9,8 @@
     'website': 'http://www.itsa.edu.mx',
     'depends': ['base'],
     'data': [
+        'security/grupos.xml',
+        'security/ir.model.access.csv',
         'views/alumnos_view.xml',
         'views/carreras_view.xml',
         'views/periodos_view.xml',
